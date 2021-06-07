@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Weather Forecast</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+    <div class="row">
+      <section class="header col-md-4 col-sm-10">
+        <h1 >
+          Weather App
+        </h1>
+        <p> Using OpenWeather API</p>
+      </section>
+
+      <section class="main col-md-7 col-sm-10">
+        <section class="inputs">
+         
+          <input type="text" name="city" placeholder="Enter your city..." id="cityinput">
+          
+          <div class="submit">
+          <input type="submit" value ="Submit" id="add"></div>
+
+        </section>
+
+        <section class="display">
+          <div class="wrapper">
+          <h2 id="cityoutput" class="kolkata"> Kolkata</h2>
+          <p id="description" class="windy">  Windy</p>
+          <p id="temp" class="temperature"> 25 °c</p>
+          <p id="wind" class="speed">260km/hr</p>
+        </div>
+      </section>
+    </section>
+  </div>
+</div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
